@@ -4,7 +4,14 @@
     "label": "",
     "image": "",
     "email": "taehoon.kim@ufl.edu",
-    "summary": "Born and raise in South Korea. Studying in plant reproduction and epigenetics."
+    "summary": "Born and raised in South Korea. <br>Studying in plant reproduction and epigenetics.",
+    "location": {
+      "address": "1535 Fifield Hall PO box 110670, 2250 Hull Road",
+      "city": "Gainesville",
+      "postalCode": "FL 32611",
+      "region": "Florida",
+      "countryCode": "US"
+    }
   },
   "work": [
     {
@@ -13,7 +20,10 @@
       "startDate": "2024-08-16",
       "endDate": "current",
       "summary": "",
-      "highlights": [""]
+      "highlights": [
+        "DNA methylation dynamics during rice female gametophyte development",
+        "Transcriptomic dynamics during rice female gametophyte development"
+      ]
     }
   ],
   "education": [
@@ -24,7 +34,10 @@
       "studyType": "PhD",
       "startDate": "2020-01-01",
       "endDate": "2024-08-09",
-      "highlights": ["Dissertation: Molecular and Epigenomic Dynamics during Female Gametophyte Development in Rice","Advisor: Dr. Kevin Begcy"]
+      "courses": [
+        "Dissertation: Molecular and Epigenomic Dynamics during Female Gametophyte Development in Rice",
+        "Advisor: Dr. Kevin Begcy"
+      ]
     },
     {
       "institution": "Seoul National University",
@@ -33,7 +46,10 @@
       "studyType": "M.Sc",
       "startDate": "2017-03-01",
       "endDate": "2019-02-28",
-      "highlights": ["Thesis: Regulatory Roles of <i>OsWRKY5</i> Trascription Factor in Promotion of Leaf Senescence","Advisor: Dr. Nam-Chon Paek"]
+      "courses": [
+        "Thesis: Regulatory Roles of <i>OsWRKY5</i> Trascription Factor in Promotion of Leaf Senescence",
+        "Advisor: Dr. Nam-Chon Paek"
+      ]
     },
     {
       "institution": "Seoul National University",
@@ -41,7 +57,9 @@
       "studyType": "B.Sc",
       "startDate": "2010-03-01",
       "endDate": "2017-02-28",
-      "highlights": ["Leave of Absence for military service (2013.03-2016.02)"]
+      "courses": [
+        "Leave of Absence for military service (2013.03-2016.02)"
+      ]
     }
   ],
   "awards": [
@@ -52,16 +70,18 @@
       "summary": ""
     }
   ],
-  "selected publications": [
+  "publications": [
     {
-      "name": "Full list of publications",
-      "url": "https://taehoonkim7.github.io/publications/"
+      "name": "List of publications",
+      "releaseDate": "",
+      "url": "https://taehoonkim7.github.io/publications/",
+      "summary": "Full list of publications is available through the link." 
     }
   ],
   "skills": [
     {
       "name": "Molecular cloning",
-      "icon": "fa-solid fa-rotate",
+      "icon": "fa-solid fa-clone",
       "keywords": [
         "TA cloning",
         "Restriction cloning",
@@ -77,18 +97,94 @@
         "Agroinfiltration of tobacco leaves",
         "Particle bombardment of onion epidermis"
       ]
+    },
+    {
+      "name": "DNA experiments",
+      "icon": "fa-solid fa-dna",
+      "keywords": [
+        "Genomic DNA extraction",
+        "Marker-based genotyping",
+        "CRISPR genotyping using Hi-TOM"
+      ]
+    },
+    {
+      "name": "RNA experiments",
+      "icon": "fa-solid fa-dna",
+      "keywords": [
+        "Total RNA extraction",
+        "cDNA synthesis",
+        "RT-qPCR & stem-loop RT-qPCR"
+      ]
+    },
+    {
+      "name": "Protein experiments",
+      "icon": "fa-solid fa-disease",
+      "keywords": [
+        "Total protein extraction",
+        "Bradford quantification",
+        "SDS-PAGE & Western blot",
+        "Protein induction and purification from <i>E. coli</i>"
+      ]
+    },
+    {
+      "name": "Physiological & Biochemical assay",
+      "icon": "fa-solid fa-leaf",
+      "keywords": [
+        "Photosynthetic measurement using LI-6800",
+        "Chlorophyll quantification",
+        "Hormone quantification using ELISA"
+      ]
+    },
+    {
+      "name": "Bimolecular interaction",
+      "icon": "fa-solid fa-flask-vial",
+      "keywords": [
+        "Yeast one-hybrid (Y1H)",
+        "Yeast two-hybrid (Y2H)",
+        "Electrophoretic mobility shift assay (EMSA)",
+        "Bimolecular fluorescence complementation (BiFC)"
+      ]
+    },
+    {
+      "name": "Microscopy",
+      "icon": "fa-solid fa-microscope",
+      "keywords": [
+        "Optical microscopy",
+        "Dissecting microscopy",
+        "Confocal microscopy"
+      ]
+    },
+    {
+      "name": "Bioinformatics",
+      "icon": "fa-solid fa-laptop-code",
+      "keywords": [
+        "Phylogenetic analysis using MEGA X",
+        "Synteny analysis using MCScanX",
+        "RNA sequencing (mRNA-seq) pipeline",
+        "Methylation sequencing (EM-seq) pipeline",
+        "small RNA sequencing (sRNA-seq) piepline"
+      ]
+    },
+    {
+      "name": "Programming languages",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python3 (data analysis, sqeuencing data processing)",
+        "R (data analysis, statistical analysis, plotting)",
+        "Bash (bioinformatic pipelines)"
+      ]
     }
   ],
   "languages": [
     {
       "language": "Korean",
       "fluency": "Native speaker",
-      "icon": "🇰🇷"
+      "icon": "fa-regular fa-face-laugh"
     },
     {
       "language": "English",
       "fluency": "Professional",
-      "icon": "🇬🇧"
+      "icon": "fa-solid fa-person-chalkboard"
     }
   ],
   "references": [
