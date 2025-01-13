@@ -64,9 +64,33 @@
   ],
   "awards": [
     {
-      "title": "",
-      "date": "",
-      "awarder": "",
+      "title": "Jasper Joiner Graduate Student Travel Scholarship",
+      "date": "2023-05",
+      "awarder": "University of Florida",
+      "summary": ""
+    },
+    {
+      "title": "ASPB Plant Biology 2023 Travel Award",
+      "date": "2023-03",
+      "awarder": "The American Society of Plant Biologists",
+      "summary": ""
+    },
+    {
+      "title": "2022 Muriel Rumsey Foundation Scholarship",
+      "date": "2022-09",
+      "awarder": "University of Florida and Muriel Rumsey Foundation",
+      "summary": ""
+    },
+    {
+      "title": "2022 ASHS Outstanding Graduate Horticulture Student Award",
+      "date": "2022-04",
+      "awarder": "American Society for Horticultural Science",
+      "summary": ""
+    },
+    {
+      "title": "Graduate School Funding Award",
+      "date": "2020-03",
+      "awarder": "University of Florida",
       "summary": ""
     }
   ],
@@ -76,6 +100,32 @@
       "releaseDate": "",
       "url": "https://taehoonkim7.github.io/publications/",
       "summary": "Full list of publications is available through the link." 
+    }
+  ],
+  "presentations": [
+    {
+      "title": "Understanding the Transcriptional and Epigenetic Dynamics of Female Gametophyte Development in Rice",
+      "date": "2023-08",
+      "conference": "ASPB Plant Biology 2023, Savannah, GA, USA",
+      "summary": ""
+    },
+    {
+      "title": "Understanding of Female Gametophyte Development in Rice",
+      "date": "2022-12",
+      "conference": "Crop Molecular Genetics lab, Seoul National University, Seoul, South Korea",
+      "summary": ""
+    },
+    {
+      "title": "Multiplex Plant Genome Editing Using CRISPR/Cas9 System and Goldengate Cloning",
+      "date": "2021-09",
+      "conference": "Blueberry Breeding and Genomics lab, University of Florida, Gainesville, USA (Virtual)",
+      "summary": ""
+    },
+    {
+      "title": "Multiplex Plant Genome Editing Using CRISPR/Cas9 System and Goldengate Cloning",
+      "date": "2020-09",
+      "conference": "University of Campinas, Campinas, Brazil (Virtual)",
+      "summary": ""
     }
   ],
   "skills": [
@@ -162,7 +212,8 @@
         "Synteny analysis using MCScanX",
         "RNA sequencing (mRNA-seq) pipeline",
         "Methylation sequencing (EM-seq) pipeline",
-        "small RNA sequencing (sRNA-seq) piepline"
+        "small RNA sequencing (sRNA-seq) piepline",
+        "single-nuclei RNA-seq analysis using Seurat"
       ]
     },
     {
