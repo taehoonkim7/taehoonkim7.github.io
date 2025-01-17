@@ -22,7 +22,7 @@ Welcome! I am **Taehoon Kim**, currently working as a postdoctoral researcher un
 
 I was born and raised in South Korea, where I completed my Master's at *Seoul National University* under ***Dr. Nam-Chon Paek***, investigating the regulatory role of transcription factors in leaf senescence and abiotic stress responses in rice. Seeking new challenges, I then moved to the United States to pursue my Ph.D. at the *University of Florida*, studying molecular and epigenomic dynamics during rice female gametophyte development under [***Dr. Begcy***](https://hort.ifas.ufl.edu/begcy-lab/)—a journey I recently completed.
 
-Currently, as a postdoc, I’m exploring the molecular mechanism of de novo DNA methylation in rice female gametophyte development. By integrating bioinformatic approaches for genome-scale insights and molecular biology techniques, I aim to understand the epigenetic regulation critical to plant reproductive success.
+Currently, as a postdoc, I’m exploring the molecular mechanism of *de novo* DNA methylation in rice female gametophyte development. By integrating bioinformatic approaches for genome-scale insights and molecular biology techniques, I aim to understand the epigenetic regulation critical to plant reproductive success.
 
 Beyond academia, I enjoy listening to music and playing the bass guitar, both of which often inspire a fresh perspective in my scholarly work. If you’d like to learn more about my research or discuss potential collaborations, please feel free to reach out.
 
