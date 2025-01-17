@@ -9,9 +9,16 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "publications",
-          description: "publications by categories in reversed chronological order.",
+  },{id: "nav-presentations",
+          title: "Presentations",
+          description: "Presentations (invited talks, contributed talks, and conference abstracts/posters) in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/presentations/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "Publications (preprints, journal articles, and book chapters) in reversed chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
