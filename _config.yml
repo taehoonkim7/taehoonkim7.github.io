@@ -296,8 +296,8 @@ scholar:
   details_link: Details
 
   query: "@*"
-  type_order: [article, unpublished, chapter]
-  type_names: {article: Journal articles, unpublished: Preprints, chapter: Book chapters}
+  type_order: [unpublished, article, chapter]
+  type_names: {unpublished: Preprints, article: Journal articles, chapter: Book chapters}
   group_by: year
   group_order: descending
 

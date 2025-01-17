@@ -718,13 +718,14 @@ footer.sticky-bottom {
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
-    text-align: right;
+    font-weight: bolder;
+    text-align: left;
   }
 
   h3.bibliography {
     color: var(--global-divider-color);
     font-style: italic;
-    text-align: left;
+    text-align: right;
   }
 
   ol.bibliography {
