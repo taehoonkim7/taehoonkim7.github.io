@@ -14,7 +14,17 @@ nav_order: 3
 {% include bib_search.liquid %}
 
 <div class="presentations">
+  
+  <div class = "Invited talks">
+    {% bibliography --file invited --template present --group_by year --group_order descending %}
+  </div>
 
-{% bibliography --file present --template present --group_by type,year --group_order ascending,descending %}
-
+  <div class = "Contributed talks">
+    {% bibliography --file contributed --template present --group_by year --group_order descending %}
+  </div>
+  
+  <div class = "Conference abstracts/posters">
+    {% bibliography --file conference --template present --group_by year --group_order descending %}
+  </div>
+  
 </div>

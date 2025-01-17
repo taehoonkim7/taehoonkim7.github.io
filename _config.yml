@@ -296,8 +296,8 @@ scholar:
   details_link: Details
 
   query: "@*"
-  type_order: [unpublished, article, chapter, invited, contributed, poster]
-  type_names: {unpublished: Preprints, article: Journal articles, chapter: Book chapters, invited: Invited talks, contributed: Contributed talks, poster: Conference abstracts/posters}
+  type_order: [unpublished, article, incollection]
+  type_names: {unpublished: Preprints, article: Journal articles, incollection: Book chapters}
   group_by: year
   group_order: descending
   
