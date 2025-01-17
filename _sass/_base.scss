@@ -769,17 +769,18 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px dashed;
 
           &:hover {
-            border-bottom-style: solid;
+            color: var(--global-theme-color);
+            border-bottom-style: solid var(--global-theme-color);
             text-decoration: none;
           }
         }
 
         > em {
-          border-bottom: 1px solid;
-          font-style: normal;
+          border-bottom: 1px solid var(--global-theme-color);
+          font-style: bolder;
         }
 
         > span.more-authors {
@@ -892,14 +893,6 @@ footer.sticky-bottom {
   }
 
   h2 {
-    margin-bottom: 1rem;
-
-    span {
-      font-size: 1.5rem;
-    }
-  }
-
-  h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
@@ -955,17 +948,18 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px dashed;
 
           &:hover {
-            border-bottom-style: solid;
+            color: var(--global-theme-color);
+            border-bottom-style: solid var(--global-theme-color);
             text-decoration: none;
           }
         }
 
         > em {
-          border-bottom: 1px solid;
-          font-style: normal;
+          border-bottom: 1px solid var(--global-theme-color);
+          font-style: bolder;
         }
 
         > span.more-authors {

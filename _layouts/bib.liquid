@@ -81,20 +81,29 @@
           {% if forloop.first == false %},&nbsp;{% endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
+        
+        {%- assign hyphen_first_name = author.first | replace: "-", " - " -%}
+        {% assign first_names = hyphen_first_name | split: " " %}
         {%- if author_is_self -%}
           <em>
-            {{- author.first }}
-            {{ author_last_html -}}
+            {{- author_last_html }}
+            {% for first_name in first_names -%}
+              {{ first_name | slice: 0, 1 }}
+            {%- endfor -%}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
-              {{- author.first }}
-              {{ author_last_html -}}
+              {{- author_last_html }}
+              {% for first_name in first_names -%}
+                {{ first_name | slice: 0, 1 }}
+              {%- endfor -%}
             </a>
           {%- else -%}
-            {{- author.first }}
-            {{ author_last_html -}}
+            {{- author_last_html }}
+            {% for first_name in first_names -%}
+              {{ first_name | slice: 0, 1 }}
+            {%- endfor -%}
           {% endif %}
         {%- endif -%}
       {% endfor %}

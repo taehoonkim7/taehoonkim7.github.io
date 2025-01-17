@@ -1,48 +1,6 @@
 ---
 ---
 <div class="row">
-  {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {% endif %}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
-        {% endif %}
-      {% endif %}
-      {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-        {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            alt=entry.preview
-          %}
-        {% endif %}
-      {% endif %}
-    </div>
-  {% endif %}
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
@@ -81,20 +39,29 @@
           {% if forloop.first == false %},&nbsp;{% endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
+        
+        {%- assign hyphen_first_name = author.first | replace: "-", " - " -%}
+        {% assign first_names = hyphen_first_name | split: " " %}
         {%- if author_is_self -%}
           <em>
-            {{- author.first }}
-            {{ author_last_html -}}
+            {{- author_last_html }}
+            {% for first_name in first_names -%}
+              {{ first_name | slice: 0, 1 }}
+            {%- endfor -%}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
-              {{- author.first }}
-              {{ author_last_html -}}
+              {{- author_last_html }}
+              {% for first_name in first_names -%}
+                {{ first_name | slice: 0, 1 }}
+              {%- endfor -%}
             </a>
           {%- else -%}
-            {{- author.first }}
-            {{ author_last_html -}}
+            {{- author_last_html }}
+            {% for first_name in first_names -%}
+              {{ first_name | slice: 0, 1 }}
+            {%- endfor -%}
           {% endif %}
         {%- endif -%}
       {% endfor %}
@@ -146,27 +113,26 @@
     </div>
 
     <!-- Journal/Book title and date -->
-    {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif entry.type == 'unpublished' %}
       {% capture entrytype %}<em>Preprint in {{ entry.journal }}</em>{% endcapture %}
-    {% elsif entry.type == 'chapter' %}
+    {% elsif entry.type == 'incollection' %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
-    {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+    {% elsif entry.type == 'inproceedings' %}
+      {% capture entrytype %}<em>{{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
-    {% if entry.year %}
-      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
-    {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}
+    {% if entry.year %}
+      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
+    {% endif %}
     {% if entry.additional_info %}
       {% capture entrytype %}{{ entrytype }}{{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
     {% endif %}

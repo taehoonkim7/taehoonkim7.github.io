@@ -15,16 +15,13 @@ nav_order: 3
 
 <div class="presentations">
   
-  <div class = "Invited talks">
-    {% bibliography --file invited --template present --group_by year --group_order descending %}
-  </div>
+  <h2>Invited talks</h2>
+  {% bibliography --file invited --template present --group_by year --group_order descending %}
 
-  <div class = "Contributed talks">
-    {% bibliography --file contributed --template present --group_by year --group_order descending %}
-  </div>
-  
-  <div class = "Conference abstracts/posters">
-    {% bibliography --file conference --template present --group_by year --group_order descending %}
-  </div>
+  <h2>Contributed talks</h2>
+  {% bibliography --file contributed --template present --group_by year --group_order descending %}
+
+  <h2>Conference abstracts/posters</h2>
+  {% bibliography --file conference --template present --group_by year --group_order descending %}
   
 </div>
