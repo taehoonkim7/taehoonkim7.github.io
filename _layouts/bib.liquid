@@ -150,9 +150,9 @@
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
-    {% if entry.type == 'unpublished' %}
+    {% elsif entry.type == 'unpublished' %}
       {% capture entrytype %}<em>Preprint in {{ entry.journal }}</em>{% endcapture %}
-    {% if entry.type == 'chapter' %}
+    {% elsif entry.type == 'chapter' %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
