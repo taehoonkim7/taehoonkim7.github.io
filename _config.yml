@@ -94,7 +94,7 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
   enabled: true
@@ -283,6 +283,7 @@ scholar:
 
   source: /_bibliography/
   bibliography: papers.bib
+  presentation: present.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
@@ -296,10 +297,11 @@ scholar:
   details_link: Details
 
   query: "@*"
-  type_order: [unpublished, article, chapter]
-  type_names: {unpublished: Preprints, article: Journal articles, chapter: Book chapters}
+  type_order: [unpublished, article, chapter, invited, contributed, abstract-poster]
+  type_names: {unpublished: Preprints, article: Journal articles, chapter: Book chapters, invited: Invited talks, contributed: Contributed talks, abstract-poster: Conference abstracts/posters}
   group_by: year
   group_order: descending
+  
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
