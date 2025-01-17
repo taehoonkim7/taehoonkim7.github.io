@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-presentations",
-          title: "Presentations",
-          description: "Presentations (invited talks, contributed talks, and conference abstracts/posters) in reversed chronological order.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/presentations/";
-          },
-        },{id: "nav-publications",
-          title: "Publications",
+  },{id: "nav-publications",
+          title: "publications",
           description: "Publications (preprints, journal articles, and book chapters) in reversed chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-presentations",
+          title: "presentations",
+          description: "Presentations (invited talks, contributed talks, and conference abstracts/posters) in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/presentations/";
           },
         },{id: "nav-cv",
           title: "cv",
