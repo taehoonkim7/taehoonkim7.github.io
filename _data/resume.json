@@ -4,7 +4,7 @@
     "label": "",
     "image": "",
     "email": "taehoon.kim@ufl.edu",
-    "summary": "Born and raised in South Korea. <br>Studying in plant reproduction and epigenetics.",
+    "summary": "Born and raised in South Korea. <br>Postdoc in Begcy lab. <br>Studying plant reproduction and epigenetics.",
     "location": {
       "address": "1535 Fifield Hall PO box 110670, 2250 Hull Road",
       "city": "Gainesville",
@@ -18,7 +18,6 @@
       "name": "Begcy lab, University of Florida",
       "position": "Postdoc Associate",
       "startDate": "2024-08-16",
-      "endDate": "current",
       "summary": "",
       "highlights": [
         "DNA methylation dynamics during rice female gametophyte development",
@@ -63,6 +62,22 @@
       ]
     }
   ],
+  "publications": [
+    {
+      "name": "List of publications",
+      "releaseDate": "",
+      "url": "https://taehoonkim7.github.io/publications/",
+      "summary": "Full list of publications is available through the link." 
+    }
+  ],
+  "presentations": [
+    {
+      "title": "List of presentations",
+      "date": "",
+      "url": "https://taehoonkim7.github.io/presentations/",
+      "summary": "Full list of presentations is available through the link." 
+    }
+  ],
   "awards": [
     {
       "title": "Jasper Joiner Graduate Student Travel Scholarship",
@@ -95,38 +110,14 @@
       "summary": ""
     }
   ],
-  "publications": [
+  "volunteer": [
     {
-      "name": "List of publications",
-      "releaseDate": "",
-      "url": "https://taehoonkim7.github.io/publications/",
-      "summary": "Full list of publications is available through the link." 
-    }
-  ],
-  "presentations": [
-    {
-      "title": "Understanding the Transcriptional and Epigenetic Dynamics of Female Gametophyte Development in Rice",
-      "date": "2023-08",
-      "conference": "ASPB Plant Biology 2023, Savannah, GA, USA",
-      "summary": ""
-    },
-    {
-      "title": "Understanding of Female Gametophyte Development in Rice",
-      "date": "2022-12",
-      "conference": "Crop Molecular Genetics lab, Seoul National University, Seoul, South Korea",
-      "summary": ""
-    },
-    {
-      "title": "Multiplex Plant Genome Editing Using CRISPR/Cas9 System and Goldengate Cloning",
-      "date": "2021-09",
-      "conference": "Blueberry Breeding and Genomics lab, University of Florida, Gainesville, USA (Virtual)",
-      "summary": ""
-    },
-    {
-      "title": "Multiplex Plant Genome Editing Using CRISPR/Cas9 System and Goldengate Cloning",
-      "date": "2020-09",
-      "conference": "University of Campinas, Campinas, Brazil (Virtual)",
-      "summary": ""
+      "organization": "2025 Florida Regional Junior Science and Humanities Symposium",
+      "location": "Gainesville, FL, USA",
+      "position": "Reviewer",
+      "startDate": "2024-12-23",
+      "endDate": "2025-01-10",
+      "summary": " served as a reviewer to evaluate independent research investigations and competitive submissions from high school students in Florida"
     }
   ],
   "skills": [
@@ -235,7 +226,7 @@
     },
     {
       "language": "English",
-      "fluency": "Professional",
+      "fluency": "Professional level",
       "icon": "fa-solid fa-person-chalkboard"
     }
   ],
