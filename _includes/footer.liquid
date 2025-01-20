@@ -1,7 +1,18 @@
+{% comment %} Adjust time zone based on EST {% endcomment %}
+{% assign timestamp = 'now' | date: "%s" | plus: 0 %}
+{% assign current_month = timestamp | date: "%m" | plus: 0 %}
+{% if current_month >= 3 and current_month <= 11 %}
+  {% assign offset = 14400 %}
+{% else %}
+  {% assign offset = 18000 %}
+{% endif %}
+{% assign local_time = timestamp | date: "%s" | minus: offset | date: '%B %d, %Y' %}
+{% assign local_year = timestamp | date: "%s" | minus: offset | date: '%Y' %}
+
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
-      &copy; Copyright {{ site.time | date: '%Y' }}
+      &copy; Copyright {{ local_year }}
       {{ site.first_name }}
       {{ site.middle_name }}
       {{ site.last_name }}. {{ site.footer_text }}
@@ -9,7 +20,7 @@
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
       {% endif %}
       {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+        Last updated: {{ local_time }}.
       {% endif %}
     </div>
   </footer>
@@ -20,7 +31,7 @@
     {% endif %}
 
     <div class="container">
-      &copy; Copyright {{ site.time | date: '%Y' }}
+      &copy; Copyright {{ local_year }}
       {{ site.first_name }}
       {{ site.middle_name }}
       {{ site.last_name }}. {{ site.footer_text }}
@@ -28,7 +39,7 @@
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
       {% endif %}
       {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+        Last updated: {{ local_time }}.
       {% endif %}
     </div>
   </footer>
