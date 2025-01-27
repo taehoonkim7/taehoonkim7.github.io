@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Ph**inally **D**one, and I became Dr. Kim! :mortar_board:
+***Ph***inally ***D***one, and I became Dr. Kim! :mortar_board:
