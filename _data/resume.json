@@ -112,6 +112,12 @@
   ],
   "services": [
     {
+      "position": "Peer-review",
+      "highlights": [
+        "Reviewed a manuscript submitted to <i>BMC Plant Biology</i>"
+      ]
+    },
+    {
       "organization": "2025 Florida Regional Junior Science and Humanities Symposium",
       "location": "Gainesville, FL, USA",
       "position": "Reviewer",
